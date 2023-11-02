@@ -6,7 +6,7 @@ func main() {
 	evenNumbers := []int{}
 	oddNumbers := []int{}
 
-	numbers := createNumbers(10)
+	numbers := createNumbers(20)
 
 	for _, number := range numbers {
 		if number%2 == 0 {
