@@ -3,9 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	numbers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 	evenNumbers := []int{}
 	oddNumbers := []int{}
+
+	numbers := createNumbers(10)
 
 	for _, number := range numbers {
 		if number%2 == 0 {
@@ -17,4 +18,15 @@ func main() {
 
 	fmt.Println("Even ", evenNumbers, "; Odd ", oddNumbers)
 
+}
+
+func createNumbers(r int) []int {
+	numbers := []int{}
+
+	for r > 0 {
+		numbers = append(numbers, r)
+		r -= 1
+	}
+
+	return numbers
 }
