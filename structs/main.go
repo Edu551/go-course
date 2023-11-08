@@ -38,8 +38,8 @@ func main() {
 	jim.updateName("Sam")
 	jim.print()
 	fmt.Println("")
-}
 
+}
 func (pointerToPerson *person) updateName(newFirstName string) {
 	(*pointerToPerson).firstName = newFirstName
 }
